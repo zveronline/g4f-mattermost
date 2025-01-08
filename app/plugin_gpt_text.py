@@ -25,7 +25,7 @@ class GPTtext(Plugin):
 		try:
 			response = await g4f.ChatCompletion.create_async(
 				provider="Blackbox",
-				model="gemini-pro",
+				model="gpt-4o",
 				messages=chat_history,
 			)
 			chat_gpt_response = response
