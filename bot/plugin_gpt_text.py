@@ -24,15 +24,14 @@ class GPTtext(Plugin):
 
 		try:
 			response = await g4f.ChatCompletion.create_async(
-#				model="gpt-4",
-                model="gpt-4o",
-#                model="gpt-4o-mini",
-			messages=chat_history,
+				provider="Blackbox",
+				model="gemini-pro",
+				messages=chat_history,
 			)
 			chat_gpt_response = response
 #            self.driver.create_post(channel_id=message.channel_id, message=chat_gpt_response)
 		except Exception as e:
-			print(f"{g4f.Provider.GeekGpt.__name__}:", e)
+			print(f"{g4f.Provider.Blackbox.__name__}:", e)
 			chat_gpt_response = "Извините, произошла ошибка."
 
 		conversation_history[user_id].append({"role": "assistant", "content": chat_gpt_response})
