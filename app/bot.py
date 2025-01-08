@@ -5,9 +5,10 @@ from plugin_gpt_img import GPTimg
 from plugin_help import Help
 from g4f.client import Client
 
-mm_url = os.environ.get('MM_URL')
-mm_token = os.environ.get('MM_TOKEN')
-mm_team = os.environ.get('MM_TEAM')
+mm_url = os.environ.get("MM_URL")
+mm_token = os.environ.get("MM_TOKEN")
+mm_team = os.environ.get("MM_TEAM")
+print(MM_URL)
 
 bot = Bot(
 	settings=Settings(
