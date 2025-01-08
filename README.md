@@ -10,9 +10,9 @@ Sample docker compose:
       mode: replicated
       replicas: 1
     environment:
-      - MM_URL="https://mattermost.example.com"
-      - MM_TOKEN="12345"
-      - MM_TEAM="superteam"
+      - MM_URL=https://mattermost.example.com
+      - MM_TOKEN=12345
+      - MM_TEAM=superteam
     volumes:
       - type: tmpfs
         target: /dev/shm

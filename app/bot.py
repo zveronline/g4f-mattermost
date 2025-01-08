@@ -8,7 +8,6 @@ from g4f.client import Client
 mm_url = os.environ.get("MM_URL")
 mm_token = os.environ.get("MM_TOKEN")
 mm_team = os.environ.get("MM_TEAM")
-print(mm_url)
 
 bot = Bot(
 	settings=Settings(
