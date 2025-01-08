@@ -1,4 +1,4 @@
-Mattermost chatgpt bot
+####Mattermost chatgpt bot
 
 Sample docker compose:
 
