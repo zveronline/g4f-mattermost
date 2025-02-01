@@ -24,9 +24,9 @@ class GPTtext(Plugin):
 
 		try:
 			response = await g4f.ChatCompletion.create_async(
-				provider="Blackbox",
-				model="gpt-4o",
-				messages=chat_history,
+				provider = gpt_provider,
+				model = gpt_model,
+				messages = chat_history,
 			)
 			chat_gpt_response = response
 #            self.driver.create_post(channel_id=message.channel_id, message=chat_gpt_response)
