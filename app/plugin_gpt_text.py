@@ -1,8 +1,12 @@
+import os
 from mmpy_bot import Plugin, listen_to
 from mmpy_bot import Message
 
 import g4f
 from g4f.client import AsyncClient
+
+gpt_provider = os.environ.get("GPT_PROVIDER")
+gpt_model = os.environ.get("GPT_MODEL")
 
 # Словарь для хранения истории разговоров
 conversation_history = {}

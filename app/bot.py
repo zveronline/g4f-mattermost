@@ -8,8 +8,6 @@ from g4f.client import Client
 mm_url = os.environ.get("MM_URL")
 mm_token = os.environ.get("MM_TOKEN")
 mm_team = os.environ.get("MM_TEAM")
-gpt_provider = os.environ.get("GPT_PROVIDER")
-gpt_model = os.environ.get("GPT_MODEL")
 
 bot = Bot(
 	settings=Settings(
