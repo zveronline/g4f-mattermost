@@ -13,6 +13,8 @@ Sample docker compose:
       - MM_URL=https://mattermost.example.com
       - MM_TOKEN=12345
       - MM_TEAM=superteam
+      - GPT_PROVIDER=Liaobots
+      - GPT_MODEL=gemini-2.0-flash-exp
     volumes:
       - type: tmpfs
         target: /dev/shm
